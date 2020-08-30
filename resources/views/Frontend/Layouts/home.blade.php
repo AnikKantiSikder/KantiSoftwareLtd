@@ -15,11 +15,12 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6">
-							<img src="{{asset('public/Frontend/image/mission.jpg')}}" style="border: 1px solid #ddd;padding: 5px;background: #EFEE03;border-radius: 30px;float: left;margin-right: 10px;">
+							<img src="{{asset('public/Frontend/image/mission.jpg')}}" style="border: 1px solid #ddd;padding: 5px;background: #EFEE03;border-radius: 30px;float: left;margin-right: 10px;
+							height: 250px;width: 250px;">
 							<p style="text-align: justify;"><strong>Mission</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
 						</div>
 						<div class="col-md-6">
-							<img src="{{'public/Frontend/image/vision.jpg'}}" style="border: 1px solid #ddd;padding: 5px;background: #EFEE03;border-radius: 30px;float: left;margin-right: 10px;">
+							<img src="{{'public/Frontend/image/vision.jpg'}}" style="border: 1px solid #ddd;padding: 5px;background: #EFEE03;border-radius: 30px;float: left;margin-right: 10px; height: 250px;width: 250px;">
 							<p style="text-align: justify;"><strong>Vision</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
 						</div>
 					</div>
@@ -48,21 +49,21 @@
 									<tr>
 										<td>1</td>
 										<td>24/11/2019</td>
-										<td><img src="{{asset('public/Frontend/image/news1.jpg')}}"></td>
+										<td><img src="{{asset('public/Frontend/image/news1.jpg')}}" style="height: 100px;width: 186px;"></td>
 										<td>Dummy content</td>
 										<td><a href="" class="btn btn-info">Details</a></td>
 									</tr>
 									<tr>
 										<td>2</td>
 										<td>25/11/2019</td>
-										<td><img src="{{asset('public/Frontend/image/news2.jpg')}}"></td>
+										<td><img src="{{asset('public/Frontend/image/news2.jpg')}}" style="height: 100px;width: 186px;"></td>
 										<td>Dummy content2</td>
 										<td><a href="" class="btn btn-info">Details</a></td>
 									</tr>
 									<tr>
 										<td>3</td>
 										<td>26/11/2019</td>
-										<td><img src="{{asset('public/Frontend/image/news3.jpg')}}"></td>
+										<td><img src="{{asset('public/Frontend/image/news3.jpg')}}"  style="height: 100px;width: 186px;"></td>
 										<td>Dummy content3</td>
 										<td><a href="" class="btn btn-info">Details</a></td>
 									</tr>

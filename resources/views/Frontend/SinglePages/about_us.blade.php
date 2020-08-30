@@ -2,10 +2,28 @@
 @extends('Frontend.Layouts.master')
 	@section('content')
 
-
-    <div>
-    	<img src="{{ asset('public\Frontend\image\banner.jpg') }}" style="width: 100%;">
-    </div>
+	<div class="container-fluid">
+		<h3><b>Some of our works</b></h3>
+	</div><hr>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+			<img src="{{ asset('public\Frontend\image\banner.PNG') }}" style="width: 100%; height: 280px;">
+		</div>
+		<div class="col-md-6">
+			<img src="{{ asset('public\Frontend\image\banner2.PNG') }}" style="width: 100%; height: 280px;">
+		</div>
+	</div>
+<br><br>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="{{ asset('public\Frontend\image\banner3.PNG') }}" style="width: 100%; height: 280px;">
+		</div>
+		<div class="col-md-6">
+			<img src="{{ asset('public\Frontend\image\banner4.PNG') }}" style="width: 100%; height: 280px;">
+		</div>
+	</div>
+</div>
 
 	<!-- About us Section -->
 	<section class="about_us">

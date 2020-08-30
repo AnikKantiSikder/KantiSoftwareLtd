@@ -8,14 +8,14 @@
 		    </ol>
 		    <div class="carousel-inner" role="listbox">
 		      <!-- Slide One - Set the background image for this slide in the line below -->
-		      <div class="carousel-item active" style="background-image: url('public/Frontend/image/slider4.jpeg')">
+		      <div class="carousel-item active" style="background-image: url('public/Frontend/image/slider4.JPG')">
 		        <div class="carousel-caption d-none d-md-block">
 		          <h2 class="display-4">First Slide</h2>
 		          <p class="lead">This is a description for the first slide.</p>
 		        </div>
 		      </div>
 		      <!-- Slide Two - Set the background image for this slide in the line below -->
-		      <div class="carousel-item" style="background-image: url('public/Frontend/image/slider5.jpg')">
+		      <div class="carousel-item" style="background-image: url('public/Frontend/image/slider5.JPG');">
 		        <div class="carousel-caption d-none d-md-block">
 		          <h2 class="display-4">Second Slide</h2>
 		          <p class="lead">This is a description for the second slide.</p>

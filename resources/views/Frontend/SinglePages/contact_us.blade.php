@@ -3,7 +3,7 @@
 
 
     <div>
-    	<img src="{{ asset('public\Frontend\image\banner.jpg') }}" style="width: 100%;">
+    	<img src="{{ asset('public\Frontend\image\contact.JPG') }}" style="width: 100%;height: 500px;">
     </div>
 
 	<!-- Contact us Section -->
