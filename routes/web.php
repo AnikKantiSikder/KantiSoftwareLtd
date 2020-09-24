@@ -16,6 +16,13 @@ Route::get('/', 'Frontend\FrontendController@index');
 
 Route::get('/about-us', 'Frontend\FrontendController@aboutUs')->name('about.us');
 Route::get('/contact-us', 'Frontend\FrontendController@contactUs')->name('contact.us');
+Route::post('/contact-store', 'Frontend\FrontendController@storeContact')->name('contact.store');
+
+Route::get('/news-event', 'Frontend\FrontendController@newsEvent')->name('news.event');
+Route::get('/mission', 'Frontend\FrontendController@mission')->name('mission');
+Route::get('/vision', 'Frontend\FrontendController@vision')->name('vision');
+
+Route::get('/news-event/details/{id}', 'Frontend\FrontendController@details')->name('news.event.details');
 
 //Manage user routes-------------------------------------------------------------------
 
@@ -55,6 +62,111 @@ Route::prefix('logos')->group(function(){
 	Route::get('/edit/{id}','Backend\LogoController@edit')->name('logos.edit');
 	Route::post('/update/{id}','Backend\LogoController@update')->name('logos.update');
 	Route::get('/delete/{id}','Backend\LogoController@delete')->name('logos.delete');
+	
+});
+
+
+//Slider management routes-----------------------------------------------------------------
+
+Route::prefix('sliders')->group(function(){
+
+	Route::get('/view','Backend\SliderController@view')->name('sliders.view');
+	Route::get('/add','Backend\SliderController@add')->name('sliders.add');
+	Route::post('/store','Backend\SliderController@store')->name('sliders.store');
+	Route::get('/edit/{id}','Backend\SliderController@edit')->name('sliders.edit');
+	Route::post('/update/{id}','Backend\SliderController@update')->name('sliders.update');
+	Route::get('/delete/{id}','Backend\SliderController@delete')->name('sliders.delete');
+	
+
+});
+
+//Mission management routes-----------------------------------------------------------------
+
+Route::prefix('missions')->group(function(){
+
+	Route::get('/view','Backend\MissionController@view')->name('missions.view');
+	Route::get('/add','Backend\MissionController@add')->name('missions.add');
+	Route::post('/store','Backend\MissionController@store')->name('missions.store');
+	Route::get('/edit/{id}','Backend\MissionController@edit')->name('missions.edit');
+	Route::post('/update/{id}','Backend\MissionController@update')->name('missions.update');
+	Route::get('/delete/{id}','Backend\MissionController@delete')->name('missions.delete');
+	
+
+});
+
+
+//Vision management routes-----------------------------------------------------------------
+
+Route::prefix('visions')->group(function(){
+
+	Route::get('/view','Backend\VisionController@view')->name('visions.view');
+	Route::get('/add','Backend\VisionController@add')->name('visions.add');
+	Route::post('/store','Backend\VisionController@store')->name('visions.store');
+	Route::get('/edit/{id}','Backend\VisionController@edit')->name('visions.edit');
+	Route::post('/update/{id}','Backend\VisionController@update')->name('visions.update');
+	Route::get('/delete/{id}','Backend\VisionController@delete')->name('visions.delete');
+	
+
+});
+
+
+//Vision news and events routes-----------------------------------------------------------------
+
+Route::prefix('news_events')->group(function(){
+
+	Route::get('/view','Backend\NewsEventController@view')->name('news_events.view');
+	Route::get('/add','Backend\NewsEventController@add')->name('news_events.add');
+	Route::post('/store','Backend\NewsEventController@store')->name('news_events.store');
+	Route::get('/edit/{id}','Backend\NewsEventController@edit')->name('news_events.edit');
+	Route::post('/update/{id}','Backend\NewsEventController@update')->name('news_events.update');
+	Route::get('/delete/{id}','Backend\NewsEventController@delete')->name('news_events.delete');
+	
+
+});
+
+
+//Service routes-----------------------------------------------------------------
+
+Route::prefix('service')->group(function(){
+
+	Route::get('/view','Backend\ServiceController@view')->name('service.view');
+	Route::get('/add','Backend\ServiceController@add')->name('service.add');
+	Route::post('/store','Backend\ServiceController@store')->name('service.store');
+	Route::get('/edit/{id}','Backend\ServiceController@edit')->name('service.edit');
+	Route::post('/update/{id}','Backend\ServiceController@update')->name('service.update');
+	Route::get('/delete/{id}','Backend\ServiceController@delete')->name('service.delete');
+	
+
+});
+
+
+
+//Contact routes-----------------------------------------------------------------
+
+Route::prefix('contacts')->group(function(){
+
+	Route::get('/view','Backend\ContactController@view')->name('contacts.view');
+	Route::get('/add','Backend\ContactController@add')->name('contacts.add');
+	Route::post('/store','Backend\ContactController@store')->name('contacts.store');
+	Route::get('/edit/{id}','Backend\ContactController@edit')->name('contacts.edit');
+	Route::post('/update/{id}','Backend\ContactController@update')->name('contacts.update');
+	Route::get('/delete/{id}','Backend\ContactController@delete')->name('contacts.delete');
+	Route::get('/view/communicate','Backend\ContactController@viewCommunicate')->name('contacts.communicate');
+	Route::get('/delete/communicate/{id}','Backend\ContactController@deleteCommunicate')->name('communicates.delete');
+	
+
+});
+
+//About us routes-----------------------------------------------------------------
+
+Route::prefix('abouts')->group(function(){
+
+	Route::get('/view','Backend\AboutController@view')->name('abouts.view');
+	Route::get('/add','Backend\AboutController@add')->name('abouts.add');
+	Route::post('/store','Backend\AboutController@store')->name('abouts.store');
+	Route::get('/edit/{id}','Backend\AboutController@edit')->name('abouts.edit');
+	Route::post('/update/{id}','Backend\AboutController@update')->name('abouts.update');
+	Route::get('/delete/{id}','Backend\AboutController@delete')->name('abouts.delete');
 	
 
 });
